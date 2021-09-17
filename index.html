@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Go</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/course3.jpg" class="logo"></a>
+            <ul>
+                <!---  <li><a href="home.html">HOME</a> </li>-->
+
+                <li><a href="aboutusnew.html">ABOUT US</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Hey Editor <br> Do <span> Creative </span> </h2>
+                <p>Editing is the process of selecting and preparing written, photographic, visual, audible, or cinematic material used by a person or an entity to convey a message or information. The editing process can involve correction, condensation,
+                    organisation, and many other modifications performed with an intention of producing a correct, consistent, accurate and complete piece of work.</p>
+
+                <a href="login.php">Explore From Here</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class="edit">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li> <img src="images/thumb1.png" onclick="imgSlider('images/thumb1.png');changeCircleColor('#4481eb')"></li>
+            <li> <img src="images/thumb2.png" onclick="imgSlider('images/thumb2.png');changeCircleColor('#46BD56')"></li>
+            <li> <img src="images/thumb3.png" onclick="imgSlider('images/thumb3.png');changeCircleColor('#BA68C8')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="images/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="javascript.js" class="js">
+        function imgSlider(anything) {
+            document.querySelector('.edit').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+
+</body>
+
+</html>
